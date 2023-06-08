@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END OF RESET.CSS */
+
+body {
+    background-color: #F2EAE2;
+}
+
+.container {
+    width: 21.4rem;
+    padding-top: 6.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_img {
+    width: 21.4rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.desktop_img {
+    display: none;
+}
+
+.article_section {
+    padding: 1.4rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    background-color: #FFFFFF;
+}
+
+.perfum_tag {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
+    color: #6C7489;
+}
+
+.heading_section_mobile {
+    padding: 1rem 0;
+}
+
+.heading_section_mobile h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.heading_section_desktop {
+    display: none;
+}
+
+.heading_section_desktop h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.article_mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.438rem;
+    color: #6C7489;
+}
+
+.article_desktop {
+    display: none;
+}
+
+.pricing_section {
+    display: flex;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.125rem;
+}
+
+.price_after {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    padding-right: 1.125rem;
+    color: #3D8168;
+}
+
+.price_before {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 0.813rem;
+    text-decoration: line-through;
+    color: #6C7489;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background-color: #3D8168;
+}
+
+button:hover {
+    transition: ease-in-out 0.2s;
+    background-color: #1A4032;
+}
+
+button p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-left: 0.75rem;
+    color: #FFFFFF;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        width: 37.5rem;
+        padding-top: 8rem;
+    }
+
+    .mobile_img {
+        display: none;
+    }
+
+    .desktop_img {
+        display: block;
+        width: 18.75rem;
+        border-radius: 0.625rem 0 0 0.625rem;
+    }
+
+    .article_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.563rem;
+        border-radius: 0 0.625rem 0.625rem 0;
+        background-color: #FFFFFF;
+    }
+
+    .article_mobile {
+        display: none;
+    }
+
+    .article_desktop {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.438rem;
+        color: #6C7489;
+    }
+
+    .heading_section_mobile {
+        display: none;
+    }
+
+    .heading_section_desktop {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    button {
+        margin-bottom: 0.313rem;
+    }
+}
